@@ -10,19 +10,19 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#fdebd0] text-2xl text-gray-500 p-7 text-center h-40 relative">
+    <footer className="bg-[#fdebd0] text-2xl text-gray-500 p-7 text-center h-48 relative">
       <p>Ante cualquier consulta no dudes en contactarte con nosotros a nuestro WhatsApp o llamándonos</p>
-      <div className="mt-2">
+      <div className="mt-2 flex flex-col items-center md:flex-row md:justify-center">
         <a
           href={`https://wa.me/${sabrinaNumber}`}
-          className="underline text-xl mx-2"
+          className="underline text-xl mx-2 mb-2 md:mb-0"
         >
           Sabrina: {sabrinaNumber}
         </a>
-        |
+        <span className="mx-2">|</span>
         <a
           href={`https://wa.me/${javierNumber}`}
-          className="underline text-xl mx-2"
+          className="underline text-xl mx-2 mb-2 md:mb-0"
         >
           Javier: {javierNumber}
         </a>

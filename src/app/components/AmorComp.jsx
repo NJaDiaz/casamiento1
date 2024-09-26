@@ -24,7 +24,7 @@ const AmorComp = () => {
         className="md:w-1/2 h-auto relative"
       >
         <img
-          src="/img/Anillo.jpg"
+          src="./img/anillo.jpg"
           alt="Imagen de una pareja"
           className="w-full h-auto max-w-full max-h-full object-cover rounded-md shadow-lg "
         />

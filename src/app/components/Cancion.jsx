@@ -7,7 +7,7 @@ const AudioPlayer = ({ audioSrc }) => {
   const [volume, setVolume] = useState(1);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [isMinimized, setIsMinimized] = useState(false); // New state for minimizing
+  const [isMinimized, setIsMinimized] = useState(false); 
   const audioRef = React.useRef(null);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const AudioPlayer = ({ audioSrc }) => {
   };
 
   return (
-    <div className="fixed top-20 right-4 z-20 text-white bg-gray-800 opacity-90 shadow-lg rounded-lg p-4 flex flex-col items-center w-64">
+    <div className="fixed top-20 right-4 z-20 text-white bg-gray-800 opacity-80 shadow-lg rounded-lg p-4 flex flex-col items-center w-64">
       <h2>Escucha nuestra canción</h2>
 
       <div className="w-full flex items-center justify-between text-xs mb-2">
@@ -88,7 +88,7 @@ const AudioPlayer = ({ audioSrc }) => {
         {isMinimized ? 'Mostrar controles' : 'Ocultar controles'}
       </button>
 
-      {!isMinimized && ( // Conditional rendering for volume control
+      {!isMinimized && (
         <div className="flex items-center w-full mt-2">
           <span className="text-xs">🔊</span>
           <input
