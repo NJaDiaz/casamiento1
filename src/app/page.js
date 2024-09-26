@@ -14,7 +14,7 @@ import { faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const weddingDate = '2025-02-22T21:00:00'; 
-  const audioSrc = './el_tunel_de_la_vida.mp3';
+  const audioSrc = './music/el_tunel_de_la_vida.mp3';
 
   // Animation settings
   const sectionAnimation = {
@@ -123,7 +123,9 @@ export default function Home() {
      <Footer />
        </motion.div>
 
-       <Cancion audioSrc={audioSrc} />
+       
+       
+  <Cancion audioSrc={audioSrc} />
        
     </div>
   );

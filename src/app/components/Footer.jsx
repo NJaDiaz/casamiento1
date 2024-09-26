@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#fdebd0] text-2xl text-gray-500 p-7 text-center h-48 relative">
+    <footer className="bg-[#fdebd0] text-2xl text-gray-500 p-7 text-center h-auto relative">
       <p>Ante cualquier consulta no dudes en contactarte con nosotros a nuestro WhatsApp o llamándonos</p>
       <div className="mt-2 flex flex-col items-center md:flex-row md:justify-center">
         <a
