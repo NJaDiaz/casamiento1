@@ -14,7 +14,7 @@ import { faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const weddingDate = '2025-02-22T21:00:00';  // Fecha del evento: 22 de febrero de 2025
-  const audioSrc = '/el_tunel_de_la_vida.mp3';
+  const audioSrc = './el_tunel_de_la_vida.mp3';
 
   // Animation settings
   const sectionAnimation = {
@@ -31,11 +31,11 @@ export default function Home() {
       
         {...sectionAnimation} 
         className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8 pb-20 sm:p-20 text-center text-white grayscale-0"
-        style={{ backgroundImage: "url('/img/manos.jpg')", backgroundSize: 'cover', backgroundPosition: 'center',  }}
+        style={{ backgroundImage: "url('./img/manos.jpg')", backgroundSize: 'cover', backgroundPosition: 'center',  }}
       >
         
         <Header />
-        <img src="/img/JYS.png" alt="Logo" className="w-auto mb-4" /> {/* Logo centrado */}
+        <img src="./img/JYS.png" alt="Logo" className="w-auto mb-4" /> {/* Logo centrado */}
         <h1 className="text-6xl mb-6 font-bold">¡Te invitamos a nuestro casamiento!</h1>
         <div className="text-3xl mb-4">Solo faltan:</div>
         <Contador id="fecha" eventDate={weddingDate} />
