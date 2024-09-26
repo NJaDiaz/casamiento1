@@ -2,11 +2,11 @@ import React from 'react';
 import '../globals.css';
 
 const Footer = () => {
-  const sabrinaNumber = "1231232133";
-  const javierNumber = "1123123123";
+  const sabrinaNumber = "2665030217";
+  const javierNumber = "2664617753";
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -27,13 +27,13 @@ const Footer = () => {
           Javier: {javierNumber}
         </a>
       </div>
-      {/* Botón de flecha hacia arriba */}
+ 
       <button 
         onClick={scrollToTop} 
         className="absolute bottom-4 right-4 bg-slate-200 text-black rounded-full p-2 hover:bg-blue-700 transition duration-200"
         aria-label="Volver arriba"
       >
-        &#8593; {/* Código HTML para la flecha hacia arriba */}
+        &#8593; 
       </button>
     </footer>
   );
